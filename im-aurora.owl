@@ -1,0 +1,428 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<rdf:RDF xmlns="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#" xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:swrlb="http://www.w3.org/2003/11/swrlb#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:swrl="http://www.w3.org/2003/11/swrl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:im-cahri="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#" xml:base="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl">
+<owl:Ontology rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl"/>
+<!--  
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+      -->
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasActivityMission  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasActivityMission">
+<owl:inverseOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isActivityMissionOf"/>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasActuator  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasActuator">
+<rdfs:domain rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#robot"/>
+<rdfs:range rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#actuactor"/>
+<rdfs:label xml:lang="en">hasActuator</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasContext  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasContext">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+<rdfs:label xml:lang="en">hasContext</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasEnvironmentCondition  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasEnvironmentCondition">
+<owl:inverseOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isEnvironmentConditionOf"/>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasIdentity  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasIdentity">
+<rdfs:label xml:lang="en">hasIdentity</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasInteraction  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasInteraction">
+<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+<rdfs:label xml:lang="en">hasInteraction</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasInteractionWorkflow  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasInteractionWorkflow">
+<owl:inverseOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isInteractionWorkflowOf"/>
+<rdfs:label xml:lang="en">hasInteractionWorkflow</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasRequirement  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasRequirement">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasSensor  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hasSensor">
+<rdfs:domain rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#robot"/>
+<rdfs:range rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sensor"/>
+<rdfs:label xml:lang="en">hasSensor</rdfs:label>
+</owl:ObjectProperty>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isActivityMissionOf  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isActivityMissionOf"/>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isEnvironmentConditionOf  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isEnvironmentConditionOf"/>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isInteractionWorkflowOf  -->
+<owl:ObjectProperty rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#isInteractionWorkflowOf"/>
+<!--  
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+      -->
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Activity  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Activity">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Agent  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Agent">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Machine"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Application  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Application">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Software"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#CPU  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#CPU">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware"/>
+<rdfs:label xml:lang="en">CPU</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Classifier  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Classifier">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#algorithm"/>
+<rdfs:label xml:lang="en">Classifier</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Decisioner  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Decisioner">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#algorithm"/>
+<rdfs:label xml:lang="en">Decisioner</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#DeducedActivity  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#DeducedActivity">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Activity"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Device  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Device">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Environment  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Environment">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Machine"/>
+<rdfs:label xml:lang="en">Hardware</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Human  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Human">
+<rdfs:label xml:lang="en">Human</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Identity  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Identity">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#IndoorSpace  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#IndoorSpace">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Location"/>
+<owl:disjointWith rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#OutdoorSpace"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Interaction  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Interaction"/>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Interaction"/>
+<rdfs:label xml:lang="en">InteractionModalities</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionWorkflow  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionWorkflow">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Interaction"/>
+<rdfs:label xml:lang="en">InteractionWorkflow</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Location  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Location">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Machine  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Machine">
+<rdfs:label xml:lang="en">Machine</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Network  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Network">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#OutdoorSpace  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#OutdoorSpace">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Location"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Decisioner"/>
+<rdfs:label xml:lang="en">POMDP</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#ScheduledActivity  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#ScheduledActivity">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Activity"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Service  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Service">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Software"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Software  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Software">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Machine"/>
+<rdfs:label xml:lang="en">Software</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Time  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Time">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Context"/>
+<rdfs:label xml:lang="en">Time</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#actuactor  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#actuactor">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware"/>
+<owl:disjointWith rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sensor"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#algorithm  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#algorithm">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Software"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#ask_help  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#ask_help">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#assistive"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ask_help</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#assistive  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#assistive">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#cooperative"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assistive</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#avatar  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#avatar">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Agent"/>
+<rdfs:label xml:lang="en">avatar</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#conditions  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#conditions">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#structural"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conditions</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#cooperative  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#cooperative">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#mission"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooperative</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#eigenfaces  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#eigenfaces">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#face_recognition"/>
+<rdfs:label xml:lang="en">eigenfaces</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#event  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#event">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Time"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#face_recognition  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#face_recognition">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Classifier"/>
+<rdfs:label xml:lang="en">face_recognition</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#facial_expressions  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#facial_expressions">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoRGB"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#function  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#function">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#structural"/>
+<rdfs:label xml:lang="en">function</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#gaze  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#gaze">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoEyeTracker"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#gestures  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#gestures">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoRGB"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#haar  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#haar">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#face_recognition"/>
+<rdfs:label xml:lang="en">haar</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#health_metrics  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#health_metrics">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#psyco-physiological"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hog  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#hog">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#face_recognition"/>
+<rdfs:label xml:lang="en">hog</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#humidity  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#humidity">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#conditions"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">humidity</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#kitchen  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#kitchen">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#function"/>
+<rdfs:label xml:lang="en">kitchen</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#laizure  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#laizure">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#cooperative"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laizure</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#light  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#light">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#conditions"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#mission  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#mission">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Activity"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mission</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#monitor_environment  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#monitor_environment">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sampling"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monitor_environment</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#move_furniture  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#move_furniture">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#assistive"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">move_furniture</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#object_recognition  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#object_recognition">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Classifier"/>
+<rdfs:label xml:lang="en">object_recognition</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#play_ball  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#play_ball">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#laizure"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">play_ball</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpActions  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpActions">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP"/>
+<rdfs:label xml:lang="en">pomdpActions</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpBeliefs  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpBeliefs">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP"/>
+<rdfs:label xml:lang="en">pomdpBeliefs</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpObservations  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpObservations">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP"/>
+<rdfs:label xml:lang="en">pomdpObservations</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpRewards  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpRewards">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP"/>
+<rdfs:label xml:lang="en">pomdpRewards</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpState  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pomdpState">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#POMDP"/>
+<rdfs:label xml:lang="en">pomdpState</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pose  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#pose">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoDepth"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#psyco-physiological  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#psyco-physiological">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#recognition  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#recognition">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#mission"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recognition</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#robot  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#robot">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Agent"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#room  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#room">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#function"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sampling  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sampling">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#mission"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sampling</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#security_patrolling  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#security_patrolling">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#recognition"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">security_patrolling</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sensor  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sensor">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Hardware"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#social  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#social">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Environment"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sound  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sound">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#speech_recognition  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#speech_recognition">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sound"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#structural  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#structural">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#Environment"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structural</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#temperature  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#temperature">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#conditions"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#touch  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#touch">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoDepth  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoDepth">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoEyeTracker  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoEyeTracker">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoRGB  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#videoRGB">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#InteractionModalities"/>
+</owl:Class>
+<!--  http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#voice_synthesis  -->
+<owl:Class rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#voice_synthesis">
+<rdfs:subClassOf rdf:resource="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sound"/>
+</owl:Class>
+<!--  
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+      -->
+<rdf:Description>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+<owl:members rdf:parseType="Collection">
+<rdf:Description rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#psyco-physiological"/>
+<rdf:Description rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#sound"/>
+<rdf:Description rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#touch"/>
+<rdf:Description rdf:about="http://www.contextawarerobotics.org/cahri/kr/im-cahri.owl#visual"/>
+</owl:members>
+</rdf:Description>
+</rdf:RDF>
+<!--  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi  -->
