@@ -1,0 +1,25 @@
+Feature: Person Detection and Face Recognition - Elderly Care Centre Use
+	
+	In order to identify the different people around the elderly center
+	As a SocialRobot
+	I need to perform face recognition, while moving around
+	
+	Background:
+		Given SocialRobot moves around the elderly center
+		And the light conditions will be different in distinct divisions of the building
+	
+	Scenario: Person Detection and Face recognition in good light
+		Given the robot is moving around detecting people using the haar like features algorithm
+		And the robot is crossing a division with ambient ligth ranging between 200-350 luxes
+		When the robot selects haar like features algorithm to detect people in its way
+		And the robot selects haar like features algorithm to detect faces
+		And the robot selects eigenfaces algorithm to identify the person
+		Then the robot should identify the person
+
+	Scenario: Person Detection and Face recognition in dimmed light
+		Given the robot is moving around detecting people using the haar like features algorithm
+		And the robot is crossing a division with ambient light is below 200-350 luxes
+		When the robot selects hog like features algorithm to detect people in its way
+		And the robot selects haar like features algorithm to detect faces
+		And the robot selects eigenfaces algorithm to identify the person
+		Then the robot should identify the person
